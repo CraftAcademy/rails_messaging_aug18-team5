@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.4.3'
 
-gem 'rails', '5.0.2'
+gem 'rails', '5.1.5'
 
 gem 'bootstrap-sass'
 gem 'chosen-rails'
-gem 'devise', '4.2.1' # git: 'https://github.com/plataformatec/devise'
+gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'mailboxer'
