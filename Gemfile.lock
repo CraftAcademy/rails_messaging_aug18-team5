@@ -111,6 +111,7 @@ GEM
     pry-byebug (3.4.2)
       byebug (~> 9.0)
       pry (~> 0.10)
+    puma (3.11.2)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -196,6 +197,7 @@ DEPENDENCIES
   mailboxer
   pg (~> 0.15)
   pry-byebug
+  puma (~> 3.7)
   rails (= 5.0.2)
   rails_12factor
   rake (~> 11.1, >= 11.1.2)
