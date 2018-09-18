@@ -1,17 +1,30 @@
-Given("user have credentials") do |table|
+Given("User have credentials") do |table|
     table.hashes.each do |user|
-        User.create(user)
+        User.create(user) 
+        binding.pry
     end
 end
 
-Given("user is on landing page") do
+Given("User is on landing page") do
     visit root_path
 end
 
-When("I click the link {string}") do |login|
+When("User click the link {string}") do |login|
     click_on(login)
 end
 
-And("I fill in {string} with {string}") do |email, password|
+And("User fill in {string} with {string}") do |email, password|
     fill_in(email, with: password)
+end
+
+Then("User click the button {string}") do |login|
+    click_on(login)
+end
+
+Then("User is on landing page again") do
+    visit root_path
+end
+
+Then("User views welcome message {string}") do |message|
+    expect(page).to have_content message
 end
