@@ -11,6 +11,9 @@ Feature: User can log in
     
     Scenario: User can log in with existing credentials
         Given user is on landing page
+        When I click the link "Login"
+        And I fill in "Email" with "miriam@work.com"
+        And I fill in "Password" with "miriampassword"
 
 
 
