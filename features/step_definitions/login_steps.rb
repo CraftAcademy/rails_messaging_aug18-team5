@@ -1,7 +1,6 @@
 Given("User have credentials") do |table|
     table.hashes.each do |user|
         User.create(user) 
-        binding.pry
     end
 end
 
@@ -22,7 +21,6 @@ Then("User click the button {string}") do |login|
 end
 
 Then("User is on landing page again") do
-    visit root_path
 end
 
 Then("User views welcome message {string}") do |message|
