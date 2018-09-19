@@ -1,4 +1,4 @@
-Given("User has an existing account") do |table|
+Given("the follower user exists") do |table|
     table.hashes.each do |user|
         FactoryBot.create(:user, user)
     end
@@ -12,8 +12,8 @@ When("I click on {string}") do |string|
     click_on string
 end
   
-When("I fill in {string} with {string}") do |string, string2|
-    fill_in(string, with: string2)
+When("I fill in {string} with {string}") do |email, content|
+    fill_in(email, with: content)
 end
   
 Then("I should see message {string}") do |message|

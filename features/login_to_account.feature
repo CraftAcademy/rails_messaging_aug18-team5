@@ -1,11 +1,12 @@
 Feature: User can login to account
     
-    As a User,
-    I visit the application,
+    As a user
+    In order to connect with my friends
+    When I visit the application,
     I would like to be able to log in to my existing account
 
 Background: 
-    Given User has an existing account
+    Given the follower user exists
     | name   | email           | password      |
     | Miriam | miriam@work.com | miriampassword|
     
