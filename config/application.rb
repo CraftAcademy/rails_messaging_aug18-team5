@@ -36,6 +36,10 @@ module Mailboxer
       generate.assets false
       generate.view_specs false
       generate.test_framework :rspec
+      generate.helper_specs false
+      generate.routing_specs false
+      generate.controller_specs false
+      generate.system_tests false
     end
   end
 end
