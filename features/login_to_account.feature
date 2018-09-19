@@ -15,4 +15,4 @@ Scenario: User can log in to an existing account
     And I fill in "Email" with "miriam@work.com"
     And I fill in "Password" with "miriampassword"
     And I click on "Log in"
-    Then I should see message "Signed in succesfully."
+    Then I should see message "Signed in successfully."
