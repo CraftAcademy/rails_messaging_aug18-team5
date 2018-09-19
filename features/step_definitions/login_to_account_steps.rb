@@ -9,13 +9,13 @@ Given("I am on the landing page") do
 end
   
 When("I click on {string}") do |string|
-    pending 
+    click_on(string)
 end
   
 When("I fill in {string} with {string}") do |string, string2|
-    pending 
+    fill_in(string, with: "miriam@work.com")
 end
   
 Then("I should see message {string}") do |string|
-    pending 
+    
 end
