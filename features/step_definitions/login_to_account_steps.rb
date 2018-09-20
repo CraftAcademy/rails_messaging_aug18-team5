@@ -1,4 +1,4 @@
-Given("the follower user exists") do |table|
+Given("the follower user exist") do |table|
     table.hashes.each do |user|
         FactoryBot.create(:user, user)
     end
@@ -8,8 +8,8 @@ Given("I am on the landing page") do
     visit root_path
 end
   
-When("I click on {string}") do |string|
-    click_on string
+When("I click on {string}") do |button|
+    click_on button
 end
   
 When("I fill in {string} with {string}") do |email, content|
