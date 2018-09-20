@@ -11,11 +11,3 @@ end
 When("I click on {string}") do |button|
     click_on button
 end
-  
-When("I fill in {string} with {string}") do |email, content|
-    fill_in(email, with: content)
-end
-  
-Then("I should see message {string}") do |message|
-    expect(page).to have_content message
-end
