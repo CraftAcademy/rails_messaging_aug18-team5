@@ -20,6 +20,6 @@ When("i click on {string}") do |link|
     click_on link
 end
 
-Then("I should see a message {string}") do |string|
-    expect(page).to have_content message
+Then("I should see a message {string}") do |welcome|
+    expect(page).to have_content welcome
 end
