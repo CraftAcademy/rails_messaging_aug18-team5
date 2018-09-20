@@ -8,7 +8,6 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates_uniqueness_of :name
   validates :password, presence: true
-
   acts_as_messageable
 
   def mailboxer_name
