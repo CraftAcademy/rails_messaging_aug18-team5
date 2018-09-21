@@ -11,12 +11,3 @@ end
 Then("I select {string}") do |name|
     select('Lucia', from: 'conversation_recipients')
 end
-  
-When("i fill in {string} with {string}") do |subject, content|
-    fill_in('Subject', with: 'content')
-end
-  
-When("i fill in field Message with {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-end
-
