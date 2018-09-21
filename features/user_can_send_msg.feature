@@ -9,7 +9,6 @@ Background:
     | name   | email           | password       | 
     | team5  | team5@work.com  | miriampassword |
     | Lucia  | lucia@work.com  | luciapassword  |
-
     Given I am on the landing page
     When I click on "Login"
     And I fill in "Email" with "team5@work.com"
@@ -21,7 +20,7 @@ Background:
 Scenario: User can send a message
     Then I should be on my Inbox page
     When I click on "Compose"
-    And I click "Lucia" from "Recipients" field
-    And i fill in field Subject with "Hi there"
+    Then I select "Lucia"
+    And i fill in "Type your message here" with "Hi there"
     And i fill in field Message with "Hello again"
     Then I click on "Send Message"
