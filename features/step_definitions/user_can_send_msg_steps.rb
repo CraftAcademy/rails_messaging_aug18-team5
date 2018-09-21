@@ -1,11 +1,11 @@
 Given("I am logged in with the following credentials") do |table|
     table.hashes.each do |user|
-        FactoryBot.create(:user)
+        FactoryBot.create(:user, user)
     end
 end
 
-Then("I should be on my Inbox page") do
-    pending # Write code here that turns the phrase above into concrete actions
+And("I should be on my Inbox page") do
+    expect(current_path).to eq mailbox_inbox_path
 end
   
 When("I select recipients  {string}") do |string|
