@@ -12,8 +12,8 @@ Then("I select {string}") do |name|
     select('Lucia', from: 'conversation_recipients')
 end
   
-When("i fill in field Subject with {string}") do |string|
-    pending
+When("i fill in {string} with {string}") do |subject, content|
+    fill_in('Subject', with: 'content')
 end
   
 When("i fill in field Message with {string}") do |string|

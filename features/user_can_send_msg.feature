@@ -21,6 +21,6 @@ Scenario: User can send a message
     Then I should be on my Inbox page
     When I click on "Compose"
     Then I select "Lucia"
-    And i fill in "Type your message here" with "Hi there"
+    And i fill in "Subject" with "Hi there"
     And i fill in field Message with "Hello again"
     Then I click on "Send Message"
