@@ -6,8 +6,10 @@ Feature: User can send a message
 
 Background:
     Given the follower user exist
-    | name   | email           | password       |
+    | name   | email           | password       | 
     | team5  | team5@work.com  | miriampassword |
+    | Lucia  | lucia@work.com  | luciapassword  |
+
     Given I am on the landing page
     When I click on "Login"
     And I fill in "Email" with "team5@work.com"

@@ -8,8 +8,8 @@ And("I should be on my Inbox page") do
     expect(current_path).to eq mailbox_inbox_path
 end
   
-When("I select recipients  {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+When("I select recipients  {string}") do |field|
+    select name from recipiants field
 end
   
 When("i fill in field Subject with {string}") do |string|
@@ -19,4 +19,4 @@ end
 When("i fill in field Message with {string}") do |string|
     pending # Write code here that turns the phrase above into concrete actions
 end
-  
+
