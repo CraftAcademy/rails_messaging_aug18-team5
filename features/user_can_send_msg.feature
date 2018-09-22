@@ -5,7 +5,7 @@ Feature: User can send a message
     I would like to be able to send a message
 
 Background:
-    Given the follower user exist
+    Given the following users exist
     | name   | email           | password       | 
     | team5  | team5@work.com  | miriampassword |
     | Lucia  | lucia@work.com  | luciapassword  |
@@ -24,3 +24,4 @@ Scenario: User can send a message
     And I fill in "Subject" with "Hi there"
     And I fill in "Type your message here" with "Hello again"
     Then I click on "Send Message"
+    Then I should see "Your message was successfully sent!"
